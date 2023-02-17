@@ -167,10 +167,10 @@ const Frontend = {
       imgSrc: womanImg1,
       bonus: 0,
       strikes: 0,
-      attendance: 83,
+      attendance: 100,
       appraisals: {
         one: 4,
-        two: 4.0,
+        two: 4.1,
         three: "",
       },
       tasks: {
@@ -178,28 +178,28 @@ const Frontend = {
           score: 10,
         },
         task2: {
-          score: 10,
+          score: 7,
         },
         task3: {
-          score: 6.5,
+          score: 6.7,
         },
         task4: {
-          score: 9.5,
+          score: 7.9,
         },
         task5: {
           score: 10,
         },
         task6: {
-          score: 8.5,
+          score: 8,
         },
         task7: {
-          score: 10,
+          score: 9,
         },
         task8: {
-          score: 5,
+          score: 9,
         },
         task9: {
-          score: 9.9,
+          score: 7,
         },
         task10: {
           score: "",
@@ -214,40 +214,40 @@ const Frontend = {
       lastName: "ORIIH",
       imgSrc: manImg4,
       bonus: 0,
-      strikes: 0,
-      attendance: 83,
+      strikes: 1,
+      attendance: 86,
       appraisals: {
         one: 4,
-        two: 4.0,
+        two: 4.2,
         three: "",
       },
       tasks: {
         task1: {
-          score: 10,
+          score: 8,
         },
         task2: {
           score: 10,
         },
         task3: {
-          score: 6.5,
+          score: 7.3,
         },
         task4: {
-          score: 9.5,
+          score: 7.8,
         },
         task5: {
           score: 10,
         },
         task6: {
-          score: 8.5,
+          score: 6.2,
         },
         task7: {
           score: 10,
         },
         task8: {
-          score: 5,
+          score: 10,
         },
         task9: {
-          score: 9.9,
+          score: 8,
         },
         task10: {
           score: "",
@@ -262,40 +262,40 @@ const Frontend = {
       lastName: "EDWARD",
       imgSrc: manImg5,
       bonus: 0,
-      strikes: 0,
-      attendance: 83,
+      strikes: 1,
+      attendance: 100,
       appraisals: {
         one: 4,
-        two: 4.0,
+        two: 4.4,
         three: "",
       },
       tasks: {
         task1: {
-          score: 10,
+          score: 7,
         },
         task2: {
-          score: 10,
+          score: 6,
         },
         task3: {
-          score: 6.5,
+          score: 7.2,
         },
         task4: {
-          score: 9.5,
+          score: 8,
         },
         task5: {
-          score: 10,
+          score: 8,
         },
         task6: {
-          score: 8.5,
+          score: 9,
         },
         task7: {
           score: 10,
         },
         task8: {
-          score: 5,
+          score: 10,
         },
         task9: {
-          score: 9.9,
+          score: 8,
         },
         task10: {
           score: "",
@@ -311,7 +311,7 @@ const Frontend = {
       imgSrc: manImg6,
       bonus: 0,
       strikes: 0,
-      attendance: 83,
+      attendance: 100,
       appraisals: {
         one: 4,
         two: 4.0,
@@ -322,28 +322,28 @@ const Frontend = {
           score: 10,
         },
         task2: {
-          score: 10,
+          score: 9,
         },
         task3: {
-          score: 6.5,
+          score: 8,
         },
         task4: {
-          score: 9.5,
+          score: 5.9,
         },
         task5: {
-          score: 10,
+          score: 6.5,
         },
         task6: {
-          score: 8.5,
+          score: 7,
         },
         task7: {
-          score: 10,
+          score: 9,
         },
         task8: {
-          score: 5,
+          score: 10,
         },
         task9: {
-          score: 9.9,
+          score: 7,
         },
         task10: {
           score: "",
@@ -359,10 +359,10 @@ const Frontend = {
       imgSrc: manImg1,
       bonus: 0,
       strikes: 0,
-      attendance: 83,
+      attendance: 93,
       appraisals: {
         one: 4,
-        two: 4.0,
+        two: 3.5,
         three: "",
       },
       tasks: {
@@ -373,25 +373,25 @@ const Frontend = {
           score: 10,
         },
         task3: {
-          score: 6.5,
+          score: 7.5,
         },
         task4: {
-          score: 9.5,
+          score: 9,
         },
         task5: {
-          score: 10,
+          score: 6,
         },
         task6: {
-          score: 8.5,
+          score: 7.5,
         },
         task7: {
-          score: 10,
+          score: 7,
         },
         task8: {
-          score: 5,
+          score: 8.5,
         },
         task9: {
-          score: 9.9,
+          score: 7.5,
         },
         task10: {
           score: "",
@@ -403,43 +403,43 @@ const Frontend = {
     {
       id: 9,
       firstName: "CHIOMA",
-      lastName: "OGWUODO",
+      lastName: "UGWUODO",
       imgSrc: womanImg2,
       bonus: 0,
-      strikes: 0,
+      strikes: 1,
       attendance: 83,
       appraisals: {
-        one: 4,
-        two: 4.0,
+        one: 3,
+        two: 3.9,
         three: "",
       },
       tasks: {
         task1: {
-          score: 10,
+          score: 8,
         },
         task2: {
           score: 10,
         },
         task3: {
-          score: 6.5,
+          score: 7.8,
         },
         task4: {
-          score: 9.5,
+          score: 4,
         },
         task5: {
-          score: 10,
+          score: 9.8,
         },
         task6: {
-          score: 8.5,
+          score: 8,
         },
         task7: {
           score: 10,
         },
         task8: {
-          score: 5,
+          score: 8,
         },
         task9: {
-          score: 9.9,
+          score: 9.5,
         },
         task10: {
           score: "",
@@ -455,10 +455,10 @@ const Frontend = {
       imgSrc: womanImg3,
       bonus: 0,
       strikes: 0,
-      attendance: 83,
+      attendance: 93,
       appraisals: {
         one: 4,
-        two: 4.0,
+        two: 3.9,
         three: "",
       },
       tasks: {
@@ -466,28 +466,28 @@ const Frontend = {
           score: 10,
         },
         task2: {
-          score: 10,
+          score: 8,
         },
         task3: {
-          score: 6.5,
+          score: 7,
         },
         task4: {
-          score: 9.5,
+          score: 5.7,
         },
         task5: {
-          score: 10,
+          score: 7,
         },
         task6: {
-          score: 8.5,
+          score: 8,
         },
         task7: {
-          score: 10,
+          score: 9,
         },
         task8: {
-          score: 5,
+          score: 9,
         },
         task9: {
-          score: 9.9,
+          score: 7,
         },
         task10: {
           score: "",

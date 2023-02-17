@@ -66,7 +66,7 @@ const ProductDesign = {
         task12: {
           score: 6.8,
         },
-        task12: {
+        task13: {
           score: 7,
         },
       },
@@ -123,7 +123,7 @@ const ProductDesign = {
         task12: {
           score: 6.8,
         },
-        task12: {
+        task13: {
           score: 9.5,
         },
       },
@@ -180,7 +180,7 @@ const ProductDesign = {
         task12: {
           score: 7.7,
         },
-        task12: {
+        task13: {
           score: 7,
         },
       },
@@ -194,24 +194,24 @@ const ProductDesign = {
       imgSrc: womanImg5,
       bonus: 0,
       strikes: 0,
-      attendance: 98,
+      attendance: 100,
       appraisals: {
         one: 4,
-        two: 4.0,
+        two: 3.6,
         three: "",
       },
       tasks: {
         task1: {
-          score: 3,
+          score: 4.5,
         },
         task2: {
           score: 3.5,
         },
         task3: {
-          score: 6.5,
+          score: 8,
         },
         task4: {
-          score: 9,
+          score: 8.5,
         },
         task5: {
           score: 10,
@@ -220,10 +220,10 @@ const ProductDesign = {
           score: 10,
         },
         task7: {
-          score: 10,
+          score: 7,
         },
         task8: {
-          score: 9,
+          score: 8,
         },
         task9: {
           score: 4,
@@ -237,8 +237,8 @@ const ProductDesign = {
         task12: {
           score: 6.8,
         },
-        task12: {
-          score: 9.5,
+        task13: {
+          score: 8.5,
         },
       },
       powerRanking: "2071",
@@ -251,24 +251,24 @@ const ProductDesign = {
       imgSrc: manImg6,
       bonus: 0,
       strikes: 0,
-      attendance: 98,
+      attendance: 88,
       appraisals: {
         one: 4,
-        two: 4.0,
+        two: 4.2,
         three: "",
       },
       tasks: {
         task1: {
-          score: 3,
+          score: 4.5,
         },
         task2: {
           score: 3.5,
         },
         task3: {
-          score: 6.5,
+          score: 8,
         },
         task4: {
-          score: 9,
+          score: 8,
         },
         task5: {
           score: 10,
@@ -277,7 +277,7 @@ const ProductDesign = {
           score: 10,
         },
         task7: {
-          score: 10,
+          score: 9,
         },
         task8: {
           score: 9,
@@ -286,16 +286,16 @@ const ProductDesign = {
           score: 4,
         },
         task10: {
-          score: 5,
+          score: 6,
         },
         task11: {
-          score: 9,
+          score: 10,
         },
         task12: {
-          score: 6.8,
+          score: 6,
         },
-        task12: {
-          score: 9.5,
+        task13: {
+          score: 7.5,
         },
       },
       powerRanking: "2059",
@@ -307,11 +307,11 @@ const ProductDesign = {
       lastName: "ONAH",
       imgSrc: womanImg4,
       bonus: 0,
-      strikes: 0,
-      attendance: 98,
+      strikes: 1,
+      attendance: 94,
       appraisals: {
         one: 4,
-        two: 4.0,
+        two: 3.7,
         three: "",
       },
       tasks: {
@@ -325,7 +325,7 @@ const ProductDesign = {
           score: 6.5,
         },
         task4: {
-          score: 9,
+          score: 7,
         },
         task5: {
           score: 10,
@@ -337,22 +337,22 @@ const ProductDesign = {
           score: 10,
         },
         task8: {
-          score: 9,
+          score: 8,
         },
         task9: {
-          score: 4,
+          score: 3.5,
         },
         task10: {
-          score: 5,
+          score: 6,
         },
         task11: {
-          score: 9,
-        },
-        task12: {
-          score: 6.8,
-        },
-        task12: {
           score: 9.5,
+        },
+        task12: {
+          score: 6,
+        },
+        task12: {
+          score: 9.9,
         },
       },
       powerRanking: "2058",
@@ -365,24 +365,24 @@ const ProductDesign = {
       imgSrc: womanImg3,
       bonus: 0,
       strikes: 0,
-      attendance: 98,
+      attendance: 96,
       appraisals: {
         one: 4,
-        two: 4.0,
+        two: 3.9,
         three: "",
       },
       tasks: {
         task1: {
-          score: 3,
+          score: 3.5,
         },
         task2: {
           score: 3.5,
         },
         task3: {
-          score: 6.5,
+          score: 7,
         },
         task4: {
-          score: 9,
+          score: 6.5,
         },
         task5: {
           score: 10,
@@ -391,25 +391,25 @@ const ProductDesign = {
           score: 10,
         },
         task7: {
-          score: 10,
+          score: 9,
         },
         task8: {
           score: 9,
         },
         task9: {
-          score: 4,
+          score: 3,
         },
         task10: {
           score: 5,
         },
         task11: {
-          score: 9,
+          score: 8,
         },
         task12: {
           score: 6.8,
         },
         task12: {
-          score: 9.5,
+          score: 7.5,
         },
       },
       powerRanking: "2017",
@@ -422,10 +422,10 @@ const ProductDesign = {
       imgSrc: manImg3,
       bonus: 0,
       strikes: 0,
-      attendance: 98,
+      attendance: 100,
       appraisals: {
         one: 4,
-        two: 4.0,
+        two: 4.1,
         three: "",
       },
       tasks: {
@@ -439,34 +439,34 @@ const ProductDesign = {
           score: 6.5,
         },
         task4: {
-          score: 9,
+          score: 9.5,
         },
         task5: {
-          score: 10,
+          score: 6,
         },
         task6: {
-          score: 10,
-        },
-        task7: {
-          score: 10,
-        },
-        task8: {
           score: 9,
         },
+        task7: {
+          score: 8.5,
+        },
+        task8: {
+          score: 10,
+        },
         task9: {
-          score: 4,
+          score: 3,
         },
         task10: {
-          score: 5,
+          score: 6,
         },
         task11: {
           score: 9,
         },
         task12: {
-          score: 6.8,
+          score: 6.5,
         },
         task12: {
-          score: 9.5,
+          score: 7,
         },
       },
       powerRanking: "2006",
@@ -479,7 +479,7 @@ const ProductDesign = {
       imgSrc: womanImg2,
       bonus: 0,
       strikes: 0,
-      attendance: 98,
+      attendance: 92,
       appraisals: {
         one: 4,
         two: 4.0,
@@ -487,16 +487,16 @@ const ProductDesign = {
       },
       tasks: {
         task1: {
-          score: 3,
+          score: 4.5,
         },
         task2: {
           score: 3.5,
         },
         task3: {
-          score: 6.5,
+          score: 8,
         },
         task4: {
-          score: 9,
+          score: 2,
         },
         task5: {
           score: 10,
@@ -508,7 +508,7 @@ const ProductDesign = {
           score: 10,
         },
         task8: {
-          score: 9,
+          score: 8.8,
         },
         task9: {
           score: 4,
@@ -523,7 +523,7 @@ const ProductDesign = {
           score: 6.8,
         },
         task12: {
-          score: 9.5,
+          score: 8.5,
         },
       },
       powerRanking: "1981",
@@ -536,7 +536,7 @@ const ProductDesign = {
       imgSrc: womanImg1,
       bonus: 0,
       strikes: 0,
-      attendance: 98,
+      attendance: 94,
       appraisals: {
         one: 4,
         two: 4.0,
@@ -544,16 +544,16 @@ const ProductDesign = {
       },
       tasks: {
         task1: {
-          score: 3,
+          score: 1.5,
         },
         task2: {
           score: 3.5,
         },
         task3: {
-          score: 6.5,
+          score: 5,
         },
         task4: {
-          score: 9,
+          score: 8,
         },
         task5: {
           score: 10,
@@ -562,25 +562,25 @@ const ProductDesign = {
           score: 10,
         },
         task7: {
-          score: 10,
+          score: 8,
         },
         task8: {
-          score: 9,
+          score: 8,
         },
         task9: {
-          score: 4,
+          score: 3,
         },
         task10: {
-          score: 5,
+          score: 6,
         },
         task11: {
           score: 9,
         },
         task12: {
-          score: 6.8,
+          score: 6,
         },
         task12: {
-          score: 9.5,
+          score: 8,
         },
       },
       powerRanking: "1975",

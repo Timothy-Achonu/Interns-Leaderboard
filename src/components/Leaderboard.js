@@ -4,11 +4,9 @@ export default function Leaderboard({data}) {
   function getTasksScores(tasks) {
     let points = 0;
     for(let task in tasks) {
-      points+=tasks[task].score;
-      // console.log(points)
-      // console.log(tasks[task])
+      points += Number(tasks[task].score);
     }
-    return points
+    return +points.toFixed(2)
   }
   return (
     <>

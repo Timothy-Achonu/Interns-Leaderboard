@@ -16,6 +16,18 @@ function App() {
   Web3
  }
  const [currentTrack, setCurrentTrack] = useState(Tracks.Frontend);
+ function handleChange(e) {
+   console.log(e.target.value);
+   if(e.target.value === 'Frontend') {
+    setCurrentTrack(Tracks.Frontend)
+   }else if(e.target.value === 'Backend'){
+    setCurrentTrack(Tracks.Backend)
+   }else if(e.target.value === 'Web3'){
+    setCurrentTrack(Tracks.Web3)
+   }else if(e.target.value === 'Product Design'){
+    setCurrentTrack(Tracks.ProductDesign)
+   }
+ }
 
   return (
     <div className="App">
@@ -27,6 +39,17 @@ function App() {
         </div>
       </div>
       <div className="main-content">
+        <div className="select-track">
+        <select onChange={handleChange}>
+          
+          <option>--Select Track--</option>
+          <option>Frontend</option>
+          <option>Backend</option>
+          <option>Product Design</option>
+          <option>Web3</option>
+        </select>
+        </div>
+
         <h2>{currentTrack.track} Leaderboard</h2>
         <div className="leaderboard-container">
           <table>
