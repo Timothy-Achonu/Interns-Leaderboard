@@ -1,51 +1,32 @@
 import React from "react";
+import Intern from "./Intern";
 
 export default function Leaderboard({data}) {
-  function getTasksScores(tasks) {
-    let points = 0;
-    for(let task in tasks) {
-      points += Number(tasks[task].score);
-    }
-    return +points.toFixed(2)
-  }
+
   return (
     <>
-      {data.interns.map((intern) => {
+    <div className="leaderboard-container">
+          <table>
+            <tbody> 
+            <tr className="t-row-head">
+              <th className="rank">Rank</th>
+              <th>Name</th>
+              <th>Attendance(%)</th>
+              <th>Bonus(5)</th>
+              <th>Strikes</th>
+              <th>Appraisals(10)</th>
+              <th>Tasks({data.track === 'Product Design'? '110': '90'})</th>
+              <th>Points(3000)</th>
+            </tr>
+            {data.interns.map((intern) => {
         return (
-          <tr key={intern.id}>
-            <td className="rank">
-              <span>{intern.id}</span>  
-            </td>
-            <td className="name">
-              {" "}
-              <img src={intern.imgSrc} alt="profile"/>{" "}
-              <div>
-                <span>{intern.firstName} </span>
-                <span>{intern.lastName}</span>
-              </div>
-            </td>
-            <td>
-              <span>{`${intern.attendance}`}</span>
-            </td>
-            <td>
-              <span> {intern.bonus} </span>
-            </td>
-            <td>
-              <span> {intern.strikes} </span>
-            </td>
-            <td>
-              <span> {intern.appraisals.one + intern.appraisals.two} </span>
-            </td>
-            <td>
-              <span> {getTasksScores(intern.tasks)} </span>
-            </td>
-            <td>
-              {" "}
-              <span> {intern.powerRanking} </span>{" "}
-            </td>
-          </tr>
+           <Intern internData={intern} key={intern.id}/>
         );
       })}
+            </tbody>
+          </table>
+        </div>
+     
     </>
   );
 }

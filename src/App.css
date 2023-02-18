@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 
-img {
+/* img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-}
+} */
 
 
 /* NAVBAR STYLING */
@@ -55,27 +55,24 @@ nav > .leaderboard-icon {
 nav > .leaderboard-icon > img {
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 
 
 .everything-is-learnable-wrapper {
     display: flex;
-    padding: 10px;
-    justify-content: flex-end;
+    justify-content: center;
+    width: 100%;
 }
 .everything-is-learnable-wrapper div {
-    background-color: #F5772F;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-weight: 600;
+    width: 900px;
     display: flex;
     justify-content: center;
 }
 .everything-is-learnable-wrapper div > img {
-    width: 30px;
-    height: 30px;
-    margin-left: 5px;
+    width: 100%;
+    height: 260px;
+    /* margin-left: 5px; */
 }
 
 /* MAIN CONTENT STYLING */
@@ -90,12 +87,14 @@ nav > .leaderboard-icon > img {
     color: #134361;
     /* overflow-x: hidden; */
 }
-
-.main-content > .select-track {
-    align-self: flex-end;
+.main-content > .select-options-wrapper 
+{
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 50px;
 }
-.main-content > .select-track > select {
+.main-content > .select-options-wrapper 
+> select {
     padding: 8px;
     border: none;
     outline: #F5772F;
@@ -103,15 +102,37 @@ nav > .leaderboard-icon > img {
     color: #134361;
     font-weight: bold;
     font-size: 1.2rem;
+    box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
-.main-content > .select-track > select option {
+.main-content > .select-options-wrapper 
+> select > option {
     padding: 10px;
     color: red;
     height: 100px;
+    text-align: start;
 }
+.main-content > .select-options-wrapper 
+> select > option:first-child {
+    text-align: center;
+    
+}
+
+/* .main-content > .select-options-wrapper > 
+.select-track {
+    align-self: flex-end;
+    margin-bottom: 50px;
+} */
+/* .main-content > .select-options-wrapper >  
+.select-track {
+} */
+/* .main-content > .select-options-wrapper >  
+.select-track option {
+} */
 .main-content h2 {
     /* text-align: center; */
     align-self: center;
+    font-size: 4rem;
 }
 .main-content > .leaderboard-container {
     width: 100%;
@@ -124,6 +145,14 @@ nav > .leaderboard-icon > img {
 
 .main-content > .leaderboard-container table tr {
     background-color: white;
+}
+.main-content > .leaderboard-container table tr:hover {
+    background-color: bisque;
+    cursor: pointer;
+}
+.main-content > .leaderboard-container table tr.t-row-head:hover {
+    background-color: white;
+    cursor: default;
 }
 .main-content > .leaderboard-container table th {
     padding: 10px;
@@ -145,19 +174,22 @@ nav > .leaderboard-icon > img {
 .main-content > .leaderboard-container table td.name > 
 div {
     display: flex;
-    flex-direction: column;
-    width: 120px;
+    flex-direction: row;
+    width: 200px;
     text-align: start;
     margin-left: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
 }
 .main-content > .leaderboard-container table td img{
     width: 50px;
     height: 50px;
+    border-radius: 50%;
 }
 
 
 /* MEDIA QUERIES */
-@media (max-width:1000px) {
+@media (max-width:1060px) {
     .main-content > .leaderboard-container {
         width: 100%;
         margin-top: 10px;
