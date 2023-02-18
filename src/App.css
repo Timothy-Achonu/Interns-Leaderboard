@@ -334,7 +334,11 @@ nav > .leaderboard-icon > img {
         margin: 10px;
       }
       .main-content h2 {
-        font-size: 1.9rem;
+        font-size: 1.6rem;
+        text-align: center;
+      }
+      .main-content > .leaderboard-container {
+        margin: 0 auto;
       }
       .main-content > .leaderboard-container table {
         width: 80%;
