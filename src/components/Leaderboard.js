@@ -11,11 +11,11 @@ export default function Leaderboard({data}) {
             <tr className="t-row-head">
               <th className="rank">Rank</th>
               <th>Name</th>
-              <th>Attendance(%)</th>
-              <th>Bonus(5)</th>
-              <th>Strikes</th>
-              <th>Appraisals(10)</th>
-              <th>Tasks({data.track === 'Product Design'? '110': '90'})</th>
+              <th className="third-break-point">Attendance(%)</th>
+              <th className="first-break-point">Bonus(5)</th>
+              <th className="first-break-point">Strikes</th>
+              <th className="second-break-point">Appraisals(10)</th>
+              <th className="fourth-break-point">Tasks({data.track === 'Product Design'? '110': '90'})</th>
               <th>Points(3000)</th>
             </tr>
             {data.interns.map((intern) => {

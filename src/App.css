@@ -1,7 +1,7 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* img {
@@ -10,112 +10,104 @@
     border-radius: 50%;
 } */
 
-
 /* NAVBAR STYLING */
 nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 90px;
-    background-color: #134361;
-    color: white;
-    padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 90px;
+  background-color: #134361;
+  color: white;
+  padding: 0 20px;
 }
 nav > .learnable-wrapper {
-    display: flex;
-    flex-direction: column;
-    font-weight: 600;
-    font-size: 2.9rem;
-    /* height: fit-content; */
-    /* background-color: yellow; */
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 2.9rem;
+  /* height: fit-content; */
+  /* background-color: yellow; */
 }
 nav > .learnable-wrapper > .learn {
-    margin-top: -15px;
+  margin-top: -15px;
 }
 nav > .learnable-wrapper > .orange-circle-wrapper {
-    display: flex;
-    align-items: center;
-    margin-top: -22px; 
-    padding-bottom: -20px;
+  display: flex;
+  align-items: center;
+  margin-top: -22px;
+  padding-bottom: -20px;
 }
-nav .learnable-wrapper > 
-.orange-circle-wrapper > .orange-circle {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #F5772F;
-    margin-bottom: -10px;
+nav .learnable-wrapper > .orange-circle-wrapper > .orange-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f5772f;
+  margin-bottom: -10px;
 }
 
 nav > .leaderboard-icon {
-    margin-left: auto;
-    width: 60px;
-    height: 70px;
+  margin-left: auto;
+  width: 60px;
+  height: 70px;
 }
 nav > .leaderboard-icon > img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
-
 
 .everything-is-learnable-wrapper {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 .everything-is-learnable-wrapper div {
-    width: 900px;
-    display: flex;
-    justify-content: center;
+  width: 900px;
+  display: flex;
+  justify-content: center;
 }
 .everything-is-learnable-wrapper div > img {
-    width: 100%;
-    height: 260px;
-    /* margin-left: 5px; */
+  width: 100%;
+  height: 260px;
+  /* margin-left: 5px; */
 }
 
 /* MAIN CONTENT STYLING */
 .main-content {
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    justify-content: center;
-    background-color:#F0F4F7 ;
-    width: 100%;
-    padding: 30px 50px;
-    color: #134361;
-    /* overflow-x: hidden; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  background-color: #f0f4f7;
+  width: 100%;
+  padding: 30px 50px;
+  color: #134361;
+  /* overflow-x: hidden; */
 }
-.main-content > .select-options-wrapper 
-{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
+.main-content > .select-options-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
 }
-.main-content > .select-options-wrapper 
-> select {
-    padding: 8px;
-    border: none;
-    outline: #F5772F;
-    width: 200px;
-    color: #134361;
-    font-weight: bold;
-    font-size: 1.2rem;
-    box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
+.main-content > .select-options-wrapper > select {
+  padding: 8px;
+  border: none;
+  outline: #f5772f;
+  width: 200px;
+  color: #134361;
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
-.main-content > .select-options-wrapper 
-> select > option {
-    padding: 10px;
-    color: red;
-    height: 100px;
-    text-align: start;
+.main-content > .select-options-wrapper > select > option {
+  padding: 10px;
+  color: red;
+  height: 100px;
+  text-align: start;
 }
-.main-content > .select-options-wrapper 
-> select > option:first-child {
-    text-align: center;
-    
+.main-content > .select-options-wrapper > select > option:first-child {
+  text-align: center;
 }
 
 /* .main-content > .select-options-wrapper > 
@@ -130,84 +122,237 @@ nav > .leaderboard-icon > img {
 .select-track option {
 } */
 .main-content h2 {
-    /* text-align: center; */
-    align-self: center;
-    font-size: 4rem;
+  /* text-align: center; */
+  align-self: center;
+  font-size: 4rem;
 }
 .main-content > .leaderboard-container {
-    width: 100%;
-    margin-top: 10px;
-    /* overflow-x:scroll; */
+  width: 100%;
+  margin-top: 10px;
+  /* overflow-x:scroll; */
 }
 .main-content > .leaderboard-container table {
-    width: 100%;
+  width: 100%;
 }
 
 .main-content > .leaderboard-container table tr {
-    background-color: white;
+  background-color: white;
 }
 .main-content > .leaderboard-container table tr:hover {
-    background-color: bisque;
-    cursor: pointer;
+  background-color: bisque;
+  cursor: pointer;
 }
 .main-content > .leaderboard-container table tr.t-row-head:hover {
-    background-color: white;
-    cursor: default;
+  background-color: white;
+  cursor: default;
 }
 .main-content > .leaderboard-container table th {
-    padding: 10px;
-    width: 300px;
+  padding: 10px;
+  width: 300px;
 }
 .main-content > .leaderboard-container table td {
-    padding: 10px;
-    text-align: center;
+  padding: 10px;
+  text-align: center;
 }
 .main-content > .leaderboard-container table th.rank {
-    width: 50px;
+  width: 50px;
 }
 .main-content > .leaderboard-container table td.name {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* font-size: 0.8rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-size: 0.8rem; */
 }
-.main-content > .leaderboard-container table td.name > 
-div {
-    display: flex;
-    flex-direction: row;
-    width: 200px;
-    text-align: start;
-    margin-left: 6px;
-    font-size: 0.8rem;
-    font-weight: 600;
+.main-content > .leaderboard-container table td.name > div {
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  text-align: start;
+  margin-left: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
 }
-.main-content > .leaderboard-container table td img{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+.main-content > .leaderboard-container table td img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
+/* INTERN MODAL */
+.intern-modal {
+  position: fixed;
+  background-color: white;
+  padding: 20px 10px;
+  top: 100px;
+  bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  left: 10%;
+  right: 10%;
+  width: 80vw;
+  box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+  overflow-y: scroll;
+  display: none;
+}
+.intern-modal > div {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.intern-modal > div span:first-child {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.intern-modal > div.name {
+  align-items: center;
+  width: fit-content;
+}
+.intern-modal > div.name span:first-child {
+  margin-bottom: 20px;
+  align-self: flex-start;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.intern-modal.show {
+  display: flex;
+}
+.intern-modal div img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.close {
+  margin-top: 0;
+  position: fixed;
+  top: 80px;
+  right: 7%;
+  background-color: black;
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  font-weight: 100;
+  box-shadow: 0 0 9px 9px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 3;
+  display: none;
+}
+.close.show {
+  display: flex;
+}
+
+.bg-dark-overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: none;
+  z-index: 2;
+}
+.bg-dark-overlay.show {
+  display: block;
+}
 
 /* MEDIA QUERIES */
-@media (max-width:1060px) {
-    .main-content > .leaderboard-container {
-        width: 100%;
-        margin-top: 10px;
-        /* overflow-x:scroll; */
-        overflow-x:scroll;
-        margin:0 auto;
-    }
-    .main-content > .leaderboard-container table {
-        width: 500px;
-    }
-    
+@media (max-width: 1060px) {
+  .main-content > .leaderboard-container {
+    width: 100%;
+    margin-top: 10px;
+    /* overflow-x:scroll; */
+    /* overflow-x:scroll; */
+    margin: 0 auto;
+  }
+  .main-content > .leaderboard-container table .first-break-point {
+    display: none;
+  }
+  .main-content h2 {
+    font-size: 2.9rem;
+  }
 }
-@media (max-width:850px) {
-    .main-content > .leaderboard-container {
-        width: 100%;
-    }
-    .main-content > .leaderboard-container table {
-        width: 400px;
-    }
-    
+@media (max-width: 950px) {
+  .main-content > .leaderboard-container table .second-break-point {
+    display: none;
+  }
+}
+@media (max-width: 850px) {
+  .main-content > .leaderboard-container table .third-break-point {
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+  .main-content > .leaderboard-container {
+    margin: 0 auto;
+  }
+  .main-content {
+    padding: 30px 20px;
+  }
+  .main-content > .leaderboard-container table .fourth-break-point {
+    display: none;
+  }
+  .main-content h2 {
+    font-size: 2.3rem;
+  }
+}
+@media (max-width: 550px) {
+  .main-content > .leaderboard-container {
+    margin: 0 auto;
+  }
+  .main-content {
+    padding: 30px 20px;
+  }
+  .main-content > .leaderboard-container table td.name > div {
+    width: 120px;
+  }
+}
+@media (max-width: 450px) {
+    .main-content > .select-options-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+      }
+      .main-content > .select-options-wrapper > select {
+        padding: 8px;
+        border: none;
+        outline: #f5772f;
+        width: 120px;
+        color: #134361;
+        font-weight: bold;
+        font-size: 0.8rem;
+        box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        margin: 10px;
+      }
+      .main-content h2 {
+        font-size: 1.9rem;
+      }
+      .main-content > .leaderboard-container table {
+        width: 80%;
+        margin: 0 auto;
+      }
+      .main-content > .leaderboard-container table td.name > div {
+        display: flex;
+        flex-direction: row;
+        width: 90px;
+        text-align: start;
+        margin-left: 6px;
+        font-size: 0.6rem;
+        font-weight: 600;
+      }
+      .main-content > .leaderboard-container table td img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+  
 }
