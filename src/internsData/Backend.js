@@ -679,7 +679,7 @@ const Backend = {
           score: 7,
         },
         task9: {
-          score: 98,
+          score: 8,
         },
         task10: {
           score: "",

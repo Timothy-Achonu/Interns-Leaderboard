@@ -667,19 +667,19 @@ const Web3 = {
           score: 5.5,
         },
         task5: {
-          score: 9,
+          score: 7,
         },
         task6: {
-          score: 4,
+          score: 5,
         },
         task7: {
-          score: 7,
+          score: 8,
         },
         task8: {
-          score: 7,
+          score: 6,
         },
         task9: {
-          score: 98,
+          score: 6.9,
         },
         task10: {
           score: "",
