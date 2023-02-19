@@ -23,7 +23,9 @@ export default function Intern({ internData, track }) {
           if(task.substring(task.length-2) === 'k9' ) {
             newObj.overall = 4
           }
-          if(task.substring(task.length-2) === 10 ) {
+          console.log(task)
+          if(task.substring(task.length-2) === '10' ) {
+            console.log(task)
             newObj.overall = 6
           }
         }

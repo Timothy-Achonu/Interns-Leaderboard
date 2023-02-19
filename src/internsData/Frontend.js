@@ -9,7 +9,6 @@ import womanImg1 from "../assets/Images/art-unsplash.jpg";
 import womanImg2 from "../assets/Images/prince-unsplash.jpg";
 import womanImg3 from "../assets/Images/blackWoman.PNG";
 import womanImg4 from "../assets/Images/blackWoman2.PNG";
-import womanImg5 from "../assets/Images/blackWoman3.PNG";
 import womanImg6 from "../assets/Images/blackWoman4.PNG";
 import womanImg7 from "../assets/Images/blackWoman5.PNG";
 
@@ -932,7 +931,7 @@ const Frontend = {
       id: 20,
       firstName: "AMARACHUKWU",
       lastName: "NWEKE",
-      imgSrc: womanImg1,
+      imgSrc: womanImg4,
       bonus: 1,
       strikes: 0,
       attendance: 100,
