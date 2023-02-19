@@ -6,10 +6,10 @@ export default function SelectOptions(props) {
   
   const { Tracks, setCurrentTrack, currentTrack } = props;
   const sortingPatterns = {
-    highestScore: "by highest score",
-    lowestScore: "by lowest score",
-    firstName: "by first name",
-    lastName: "by last name",
+    highestScore: "By highest score",
+    lowestScore: "By lowest score",
+    firstName: "By first name",
+    lastName: "By last name",
   };
   const [patternToSort, setPatternSort] = useState(
     sortingPatterns.highestScore

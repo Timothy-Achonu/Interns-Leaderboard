@@ -81,35 +81,37 @@ nav > .leaderboard-icon > img {
   margin-bottom: 50px;
 }
 .main-content > .select-options-wrapper > select {
-  padding: 8px;
-  border: none;
-  outline: #f5772f;
+  padding:12px 8px;
+  border-color: hsla(203, 67%, 23%, 0.5);
   width: 200px;
+  outline: none;
   color: #134361;
   font-weight: bold;
   font-size: 1.2rem;
-  box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
 }
 .main-content > .select-options-wrapper > select > option {
-  padding: 10px;
+  padding:17px 10px;
   color: red;
   height: 100px;
-  text-align: start;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 .main-content > .select-options-wrapper > select > option:first-child {
   text-align: center;
 }
-
-
 .main-content h2 {
   align-self: center;
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 .main-content > .leaderboard-container {
   width: 100%;
-  margin-top: 10px;
+  margin-top: 35px;
 }
 .main-content > .leaderboard-container table {
   width: 100%;
