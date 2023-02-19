@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function Intern({ internData }) {
+export default function Intern({ internData, track }) {
   const [showMoreIntern, setShowMoreIntern] = useState(false);
   function getTasksScores(tasks) {
     let points = 0;
@@ -9,11 +9,25 @@ export default function Intern({ internData }) {
     }
     return +points.toFixed(2);
   }
-  function makeTaskArray(tasks) {
+  function makeTaskArray(data, track) {
     let taskArray = [];
-    for (let task in tasks) {
-      if(tasks[task].score) {
-        taskArray.push(tasks[task]);
+    for (let task in data.tasks) {
+      let newObj = {taskScore:0, overall:0};
+      if(data.tasks[task].score) {
+        newObj.taskScore = data.tasks[task].score
+        newObj.overall = 10
+        if(track === 'Product Design') {
+          if(task.substring(task.length-2) === 'k1' || task.substring(task.length-2) === 'k2') {
+            newObj.overall = 5
+          }
+          if(task.substring(task.length-2) === 'k9' ) {
+            newObj.overall = 4
+          }
+          if(task.substring(task.length-2) === 10 ) {
+            newObj.overall = 6
+          }
+        }
+        taskArray.push(newObj);
       }
     }
     return taskArray
@@ -92,17 +106,13 @@ export default function Intern({ internData }) {
           <hr></hr>
           <span>{internData.appraisals.two}</span>
         </div>
-        {/* <div>
-            <span> Appraisal 3(5) </span> 
-            <hr></hr>
-            <span>{internData.appraisals.two}</span>
-        </div> */}
-        {makeTaskArray(internData.tasks).map((task, index) => {
+
+        {makeTaskArray(internData, track).map((task, index) => {
           return (
             <div key={index}>
-              <span> {`Task ${index+1}`} </span>
+              <span> {`Task ${index+1} (${task.overall})`} </span>
               <hr></hr>
-              <span>{task.score}</span>
+              <span>{task.taskScore}</span>
             </div>
           );
         })}

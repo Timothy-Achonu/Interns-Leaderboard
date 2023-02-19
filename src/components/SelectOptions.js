@@ -2,6 +2,8 @@ import React from "react";
 import { useState } from "react";
 
 export default function SelectOptions(props) {
+  
+  
   const { Tracks, setCurrentTrack, currentTrack } = props;
   const sortingPatterns = {
     highestScore: "by highest score",
@@ -29,22 +31,30 @@ export default function SelectOptions(props) {
   function sortByLowest(track) {
     let newArray = [];
     let arrToChange = [];
-    for(let arr of track.interns) {
-        arrToChange.push(arr)
+    for (let arr of track.interns) {
+      arrToChange.push(arr);
     }
     arrToChange.forEach((intern, index) => {
-      let lowestRankingIntern = intern
+      let lowestRankingIntern = intern;
       let lowestScore = intern.powerRanking;
-      let internIndex = index
-      for(let i=0;i<arrToChange.length;i++) {
-        if(lowestScore > arrToChange[i].powerRanking) {
-            lowestScore = arrToChange[i].powerRanking;
-            internIndex = i
-            lowestRankingIntern = arrToChange[i]
+      let internIndex = index;
+      for (let i = 0; i < arrToChange.length; i++) {
+        if (lowestScore > arrToChange[i].powerRanking) {
+          lowestScore = arrToChange[i].powerRanking;
+          internIndex = i;
+          lowestRankingIntern = arrToChange[i];
         }
       }
-      newArray.push(lowestRankingIntern);
-      arrToChange[internIndex] = {...lowestRankingIntern, powerRanking: Infinity};
+      let recentlyAdded = {
+        ...lowestRankingIntern,
+        id: arrToChange.length - index,
+        // id: 1+1,
+      };
+      newArray.push(recentlyAdded);
+      arrToChange[internIndex] = {
+        ...lowestRankingIntern,
+        powerRanking: Infinity,
+      };
     });
     setCurrentTrack({
       track: track.track,
@@ -52,48 +62,117 @@ export default function SelectOptions(props) {
     });
     console.log("sort track by lowest");
   }
+  //Sort by highest
   function sortByHighest(track) {
     let newArray = [];
     let arrToChange = [];
-    for(let arr of track.interns) {
-        arrToChange.push(arr)
+    for (let arr of track.interns) {
+      arrToChange.push(arr);
     }
     arrToChange.forEach((intern, index) => {
-      let highestRankingIntern = intern
+      let highestRankingIntern = intern;
       let highestScore = intern.powerRanking;
-      let internIndex = index
-      for(let i=0;i<arrToChange.length;i++) {
-        if(highestScore < arrToChange[i].powerRanking) {
+      let internIndex = index;
+      for (let i = 0; i < arrToChange.length; i++) {
+        if (highestScore < arrToChange[i].powerRanking) {
           highestScore = arrToChange[i].powerRanking;
-            internIndex = i
-            highestRankingIntern = arrToChange[i]
+          internIndex = i;
+          highestRankingIntern = arrToChange[i];
         }
       }
-      newArray.push(highestRankingIntern);
-      arrToChange[internIndex] = {...highestRankingIntern, powerRanking: -Infinity};
-    });
-    setCurrentTrack({
-      track: track.track,
-      interns: newArray,
+      let recentlyAdded = {
+        ...highestRankingIntern,
+        id: index + 1,
+        // id: 1+1,
+      };
+      newArray.push(recentlyAdded);
+            arrToChange[internIndex] = {
+        ...highestRankingIntern,
+        powerRanking: -Infinity,
+      };
     });
     setCurrentTrack({
       track: track.track,
       interns: newArray,
     });
     console.log("sort track by highest");
-
   }
+
+  //CHECK STR FUNC
+  function checkStr(str) {
+    let newStr = '';
+    for(let char of str) {
+      if(char.toLowerCase() >= 'a')  {
+        newStr += char
+    }
+    }
+     return newStr
+  }
+
+   //Sort by firstName
   function sortByFirstName(track) {
-    setCurrentTrack(track);
+    let newArray = [];
+    let arrToChange = [];
+    for (let arr of track.interns) {
+      arrToChange.push(arr);
+    }
+    arrToChange.forEach((intern, index) => {
+      let earliestFirstname = intern;
+      let firstName = intern.firstName;
+      let internIndex = index;
+      for (let i = 0; i < arrToChange.length; i++) {
+        if (checkStr(firstName) > checkStr(arrToChange[i].firstName)) {
+          firstName = arrToChange[i].firstName;
+          internIndex = i;
+          earliestFirstname = arrToChange[i];
+        }
+      }
+      newArray.push(earliestFirstname);
+      arrToChange[internIndex] = {
+        ...earliestFirstname,
+        firstName: 'z'.repeat(30),
+      };
+    });
+
+    setCurrentTrack({
+      track: track.track,
+      interns: newArray,
+    });
     console.log("sort track by first name");
-
   }
+  //Sort by lastName
   function sortByLastName(track) {
-    setCurrentTrack(track);
-    console.log("sort track by last name");
+    let newArray = [];
+    let arrToChange = [];
+    for (let arr of track.interns) {
+      arrToChange.push(arr);
+    }
+    arrToChange.forEach((intern, index) => {
+      let earliestFirstname = intern;
+      let lastName = intern.lastName;
+      let internIndex = index;
+      for (let i = 0; i < arrToChange.length; i++) {
+        if (checkStr(lastName) > checkStr(arrToChange[i].lastName)) {
+          lastName = arrToChange[i].lastName;
+          internIndex = i;
+          earliestFirstname = arrToChange[i];
+        }
+      }
+      newArray.push(earliestFirstname);
+      arrToChange[internIndex] = {
+        ...earliestFirstname,
+        lastName: 'z'.repeat(35),
+      };
+    });
 
+    setCurrentTrack({
+      track: track.track,
+      interns: newArray,
+    });
+    console.log("sort track by last name");
   }
 
+  //HANDLE SORTING
   function handleSort(_, track = currentTrack) {
     if (patternToSort === sortingPatterns.lowestScore) {
       sortByLowest(track);
@@ -135,8 +214,8 @@ export default function SelectOptions(props) {
         <option>--Sort--</option>
         <option>{sortingPatterns.highestScore}</option>
         <option>{sortingPatterns.lowestScore}</option>
-        {/* <option>{sortingPatterns.firstName}</option>
-        <option>{sortingPatterns.lastName}</option> */}
+        <option>{sortingPatterns.firstName}</option>
+        <option>{sortingPatterns.lastName}</option>
       </select>
     </div>
   );

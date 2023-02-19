@@ -18,9 +18,9 @@ export default function Leaderboard({data}) {
               <th className="fourth-break-point">Tasks({data.track === 'Product Design'? '110': '90'})</th>
               <th>Points(3000)</th>
             </tr>
-            {data.interns.map((intern) => {
+            {data.interns.map((intern, index) => {
         return (
-           <Intern internData={intern} key={intern.id}/>
+           <Intern internData={intern} key={index} track={data.track}/>
         );
       })}
             </tbody>
